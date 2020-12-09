@@ -1,8 +1,7 @@
     #include <bits/stdc++.h>
     using namespace std;
-     
     int main(){
-        int t,n,l,r,ans;
+        int t,n,l,r;
         cin>>t;
         for (int i=0; i<t; i++){
              cin>>n;
