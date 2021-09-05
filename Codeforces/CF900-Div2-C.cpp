@@ -15,7 +15,7 @@ int main() {
 	vector<int> rec_gen(n,0);
 	all.insert(num[0]);
 	int ans=0;
-	for (int i=1 ; i<n ; i++){
+	for (int i=1 ; i<n ; i++){ //función para rellenar los record generados[número a eliminar] y evaluar si un número es record o no
 		if (*all.rbegin() < num[i]) record[i]=true;
 		all.insert(num[i]);
 		if(num[i]==*++all.rbegin()) rec_gen[pos[*all.rbegin()]]++;
